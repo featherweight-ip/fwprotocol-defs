@@ -1,0 +1,10 @@
+
+package:
+  name: org.featherweight-ip.protocol-defs
+
+  tasks:
+  - name: all-rtlsrc
+    uses: std.FileSet
+    with:
+      type: verilogIncDir
+      base: verilog/rtl
