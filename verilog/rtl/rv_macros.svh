@@ -30,12 +30,12 @@
 `define RV_WIRES(PREFIX,DAT_WIDTH) \
 	wire[DAT_WIDTH-1:0]				PREFIX``dat; \
 	wire							PREFIX``valid; \
-	wire							PREFIX``ready
+	wire							PREFIX``ready;
 	
 `define RV_WIRES_ARR(PREFIX,DAT_WIDTH,SIZE) \
 	wire[SIZE*DAT_WIDTH-1:0]				PREFIX``dat; \
 	wire[SIZE-1:0]							PREFIX``valid; \
-	wire[SIZE-1:0]							PREFIX``ready
+	wire[SIZE-1:0]							PREFIX``ready;
 	
 `define RV_CONNECT(P_PREFIX, W_PREFIX) \
 	.P_PREFIX``dat( W_PREFIX``dat ), \
