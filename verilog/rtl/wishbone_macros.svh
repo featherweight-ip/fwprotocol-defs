@@ -55,7 +55,7 @@
 	wire[DATA_WIDTH/8-1:0]			PREFIX``sel; \
 	wire							PREFIX``stb; \
 	wire							PREFIX``ack; \
-	wire							PREFIX``we
+	wire							PREFIX``we;
 
 `define WB_WIRES_ARR(PREFIX,ADDR_WIDTH,DATA_WIDTH,SIZE) \
 	wire[(SIZE*ADDR_WIDTH)-1:0]		PREFIX``adr; \
@@ -66,7 +66,7 @@
 	wire[SIZE*(DATA_WIDTH/8)-1:0]	PREFIX``sel; \
 	wire[SIZE-1:0]					PREFIX``stb; \
 	wire[SIZE-1:0]					PREFIX``ack; \
-	wire[SIZE-1:0]					PREFIX``we
+	wire[SIZE-1:0]					PREFIX``we;
 	
 `define WB_INDEX_ARR(PREFIX,FIELD,WIDTH,INDEX) \
 	PREFIX``FIELD``[(INDEX)*(WIDTH)+:(WIDTH)]
