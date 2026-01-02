@@ -1,12 +1,19 @@
+# yaml-language-server: $schema=http://fvutils.github.io/ivpm/ivpm.schema.json
+
 package:
     name: fwprotocol_defs
-    version: None
 
     dep-sets:
       - name: default
-        deps: []
+        deps:
+        - name: zuspec-dataclasses
+          src: pypi
       - name: default-dev
-        deps: []
+        deps:
+        - name: zuspec-dataclasses
+          url: https://github.com/zuspec/zuspec-dataclasses.git
+        - name: pyhdl-if
+          url: https://github.com/fvutils/pyhdl-if.git
         
     paths:
       export:

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fwprotocol-defs"
+version = "0.1.0"
+description = "Featherweight Protocol Definitions"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Featherweight VIP"}
+]
+requires-python = ">=3.7"
+dependencies = [
+    "zuspec-dataclasses",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pss", "*.vlt"]
