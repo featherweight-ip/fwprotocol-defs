@@ -12,6 +12,7 @@ package:
         deps:
         - name: zuspec-dataclasses
           url: https://github.com/zuspec/zuspec-dataclasses.git
+          branch: mballance/simplify
         - name: pyhdl-if
           url: https://github.com/fvutils/pyhdl-if.git
         
